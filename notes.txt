@@ -1,0 +1,29 @@
+Project Outline - Dance Partners
+
+Friendfinder as base
+
+streamlined
+
+Basic Project Outline
+
+handlebars
+css
+database - ORM? sql
+registry
+login
+search
+
+Dance Partners Finder
+
+user name
+real name
+password
+age
+types of dance
+-swing
+-salsa
+skill level
+beginning intermediate expert
+image
+email
+about me section?
