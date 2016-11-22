@@ -27,3 +27,11 @@ beginning intermediate expert
 image
 email
 about me section?
+partner type
+more inputs what you want in partner
+location
+
+pulling pushing 
+
+schema seeds
+save table
