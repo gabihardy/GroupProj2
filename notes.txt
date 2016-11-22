@@ -27,3 +27,4 @@ beginning intermediate expert
 image
 email
 about me section?
+partner type
