@@ -1,0 +1,127 @@
+
+header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.navigation {
+  
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+ .links {
+  flex: 1;
+    background-color: lightblue;
+  }
+    .logo {
+    width: 200px;
+    background-color: lightgreen;
+  }
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 80px;
+  text-align: center;
+}
+h3{
+  margin-left: 3%;
+}
+.text{
+  position: absolute;
+  float: left;
+  z-index:100;
+  color: white;
+  margin-left: 10px;
+}
+.slide {
+  width: 100%;
+  position:absolute;
+}
+
+
+.slide:nth-child(1) {
+    -webkit-animation: fade 24s 0s infinite;
+    z-index:40;
+}
+
+.slide:nth-child(2) {
+    -webkit-animation: fade 24s 6s infinite;
+    z-index:30;
+}
+
+.slide:nth-child(3) {
+    -webkit-animation: fade 24s 12s infinite;
+    z-index:20;
+}
+
+.slide:nth-child(4) {
+    -webkit-animation: fade 24s 18s infinite; 
+    z-index:10;
+}
+
+@-webkit-keyframes fade {
+    0%{
+      opacity: 1;
+   }
+   15% {
+      opacity:1;
+   }
+   25%{
+      opacity: 0;
+   }
+   90% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
+.jumbotron{
+}
+
+section{
+  background-color: white;
+  width: 100%;
+}
+.info-left{
+}
+.sign-in{ 
+}
+.info-text{
+  text-align: left;
+  width: 95%;
+}
+.search-header{
+    width: 100%;
+  position:absolute;
+}
+.col-md-6{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.buttonHolder{ text-align: center; }
+.search{
+  text-align: center;
+}
+.container {
+  
+  display: flex;
+  width: 80%;
+  height: 200px;
+}
+  .A {
+    width: 200px;
+    background-color: lightgreen;
+  }
+  
+  .B {
+    flex: 1;
+    background-color: lightblue;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+
