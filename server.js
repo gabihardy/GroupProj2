@@ -17,6 +17,10 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
+
+app.get('/index', function(req,res) {
+});
+
 var routes = require('./controllers/dancepartner_controller.js');
 
 app.use('/', routes);
