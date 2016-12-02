@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="CSS/test.css">
+    </style>
+    <style type="text/css">
+        .regShow {
+        display: none;
+        width: 85%;
+        margin: auto;
+        background-color: lightgrey;
+        padding: 15px;
+        border-radius: 25px;
+        margin-bottom: 30px;
+        margin-top: -80px; 
+}
+    </style>
+</head>
+
+<body>
+        <header>
+        <!--<img class="search-header" src="CSS/Images/swing3.0.png"> -->
+        <img src="CSS/Images/country.png" class="slide" alt=""/>
+        <!-- <h2 class="text">TEST TEXT</h2> -->
+        <img src="CSS/Images/ballroom.png" class="slide" alt="" />
+        <!--<h2 class="text">TEST TEXT2</h2>-->
+        <img src="CSS/Images/swingNew.png" class="slide" alt="" />
+        <!--<h2 class="text">TEST TEXT3</h2>-->
+        <img src="CSS/Images/ballet2.png" class="slide" alt="" />
+        <!--<h2 class="text">TEST TEXT4</h2>-->
+    </header>
+
+    <section class="about">
+        <div class="row">
+  <div class="col-md-8"> 
+        <h1>Let's Dance!</h1>
+                    <div class="content">
+                <img class="numbers" src="CSS/Images/number1.png"/ alt="" >
+                <h4>First create a log in and get set up within the site.</h4>
+            </div>​
+            <div class="content">
+                <img class="numbers" src="CSS/Images/number2.png"/ alt="" >
+                <h4>Next Search for a partner by filling out a quick survey about the dancer you are looking for.</h4>
+            </div>​
+            <div class="content">
+                <img class="numbers" src="CSS/Images/number3.png"/ alt="" >
+                <h4>First create a log in and get set up within the site.</h4>
+            </div>​
+         <input id="register" class="btn btn-default" type="submit" value="Register Now">
+            </div>
+  <div class="col-md-4" id="sign-in">
+        
+        <form>
+        <h2>Sign In</h2>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <br>
+   <a style="margin-top:10px;" class="btn btn-default" href="survey.html" role="button">Submit</a>
+  </form>
+  </div>
+</div>
+      </section>
+
+<section class="regShow">
+    <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+    <label for="exampleInputEmail1">Photo URL</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="link to photo">
+  </div>
+  <a style="margin-top:10px;" class="btn btn-default" href="survey.html" role="button">Submit</a>
+</section>
+
+
+
+<!-- JAVASCRIPT FOR LOGIN -->
+<script type="text/javascript">
+function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == null || username == "") {
+            alert("Please enter the username.");
+            return false;
+        }
+        if (password == null || password == "") {
+            alert("Please enter the password.");
+            return false;
+        }
+        location.href = 'search.html';
+
+    } 
+    $(document).ready(
+    function() {
+        $("#register").click(function() {
+            $(".regShow").toggle();
+        });
+    });
+</script>
+</body>
+
+</html>
